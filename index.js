@@ -13,7 +13,7 @@ const app = express();
 // middlewares
 app.use(cors());
 app.use(express.json());
-app.use('/',(req,res) => {
+app.use("/",(req,res) => {
   res.json({message: "Hello From Sam"})
 })
 app.use("/user", userRouter);
