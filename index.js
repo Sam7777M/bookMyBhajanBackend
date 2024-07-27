@@ -13,9 +13,9 @@ const app = express();
 // middlewares
 app.use(cors());
 app.use(express.json());
-app.use("/",(req,res) => {
-  res.json({message: "Hello From Sam"})
-})
+// app.use("/",(req,res) => {
+//   res.json({message: "Hello From Sam"})
+// })
 app.use("/a",(req,res) => {
   res.json({message: "A From Sam"})
 })
