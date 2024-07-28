@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/a", (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello World!!');
 });
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
