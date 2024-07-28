@@ -13,6 +13,9 @@ const app = express();
 // middlewares
 app.use(cors());
 app.use(express.json());
+app.use("/a", (req, res) => {
+  res.send('Hello World!');
+});
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
 app.use("/movie", movieRouter);
